@@ -8,6 +8,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        StringBuffer sb = new StringBuffer("New ");
+        System.out.println( "String Buffer Capacity Before:" + sb.capacity() );
+        sb.append("Balaji And Sundaresan");
+        System.out.println( "String Buffer Capacity After:" + sb.capacity() );
+        String str = sb.toString();
+        System.out.println(str);
     }
+
 }
